@@ -76,7 +76,7 @@ const startServer = async () => {
     console.warn('[Seed] Notice during auto-seed:', err.message);
   }
 
-  app.listen(PORT, () => {
+  app.listen(PORT, '0.0.0.0', () => {
     console.log(`=======================================================`);
     console.log(`  Library Catalog & Recommendation System API Running! `);
     console.log(`  Port: http://localhost:${PORT}                       `);
