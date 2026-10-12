@@ -6,6 +6,7 @@
     "frontend"
   ],
   "scripts": {
+    "postinstall": "npm run build --workspace=frontend",
     "build": "npm run build --workspace=frontend",
     "start": "node backend/server.js"
   },
